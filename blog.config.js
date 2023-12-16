@@ -386,17 +386,17 @@ const BLOG = {
   },
 
   // RSS訂閱
-  ENABLE_RSS: process.env.NEXT_PUBLIC_ENABLE_RSS || true, // 是否開啟RSS訂閱功能
+  ENABLE_RSS: process.env.NEXT_PUBLIC_ENABLE_RSS || false, // 是否開啟RSS訂閱功能
   MAILCHIMP_LIST_ID: process.env.MAILCHIMP_LIST_ID || null, // 開啟mailichimp郵件訂閱 客戶列表ID ，具體使用方法參閱文檔
   MAILCHIMP_API_KEY: process.env.MAILCHIMP_API_KEY || null, // 開啟mailichimp郵件訂閱 APIkey
 
   // 作廢配置
   AVATAR: process.env.NEXT_PUBLIC_AVATAR || '/avatar.svg', // 作者頭像，被notion中的ICON覆蓋。若無ICON則取public目錄下的avatar.png
-  TITLE: process.env.NEXT_PUBLIC_TITLE || 'NotionNext BLOG', // 站點標題 ，被notion中的頁面標題覆蓋；此處請勿留空白，否則服務器無法編譯
+  TITLE: process.env.NEXT_PUBLIC_TITLE || 'Klnboard BLOG', // 站點標題 ，被notion中的頁面標題覆蓋；此處請勿留空白，否則服務器無法編譯
   HOME_BANNER_IMAGE:
         process.env.NEXT_PUBLIC_HOME_BANNER_IMAGE || '/bg_image.jpg', // 首頁背景大圖, 會被notion中的封面圖覆蓋，若無封面圖則會使用代碼中的 /public/bg_image.jpg 文件
   DESCRIPTION:
-        process.env.NEXT_PUBLIC_DESCRIPTION || '這是一個由NotionNext生成的站點', // 站點描述，被notion中的頁面描述覆蓋
+        process.env.NEXT_PUBLIC_DESCRIPTION || '這是一個由klnboard生成的站點', // 站點描述，被notion中的頁面描述覆蓋
 
   // 網站圖片
   IMG_LAZY_LOAD_PLACEHOLDER: process.env.NEXT_PUBLIC_IMG_LAZY_LOAD_PLACEHOLDER || 'data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==', // 懶加載占位圖片地址，支持base64或url
